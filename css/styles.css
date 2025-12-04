@@ -1,0 +1,32 @@
+:root{
+  --primary:#1F6FEB; /* deep academic blue */
+  --secondary:#22B8A9; /* teal */
+  --accent:#F5A623; /* warm amber */
+  --bg:#F5F7FB; /* soft off-white */
+  --text:#111827; /* almost-black */
+  --muted:#6b7280;
+  --maxw:980px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0}
+.container{max-width:var(--maxw);margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(90deg,var(--primary),#1158d1);color:#fff;padding:28px 0}
+.site-header h1{margin:0;font-size:28px}
+.tagline{opacity:.95;margin-top:6px}
+.hero{padding:18px 0}
+.lead{color:var(--muted)}
+.panel{background:#fff;padding:16px;border-radius:10px;box-shadow:0 4px 12px rgba(16,24,40,0.06);margin-bottom:18px}
+.row{display:flex;flex-direction:column;margin-bottom:12px}
+label{font-weight:600;margin-bottom:6px}
+input[type=text],input[type=number],select{padding:10px;border-radius:8px;border:1px solid #e6edf6}
+.actions{display:flex;gap:8px}
+.btn{padding:10px 14px;border-radius:8px;border:none;background:#eef2ff;color:var(--primary);cursor:pointer}
+.btn.primary{background:var(--primary);color:#fff}
+.cards h3{margin-top:0}
+#results{margin-top:8px}
+.site-footer{padding:18px 0;text-align:center;color:var(--muted)}
+
+@media(min-width:720px){
+  .row{flex-direction:row;gap:12px;align-items:center}
+  .row label{width:200px}
+}

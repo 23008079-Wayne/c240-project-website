@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ScholarMatch — Find scholarships that fit you</title>
+    <meta name="description" content="ScholarMatch helps students discover scholarships they qualify for, with an AI assistant to simplify eligibility and next steps.">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>ScholarMatch</h1>
+        <p class="tagline">Discover scholarships you actually qualify for — fast.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Tell us a bit about yourself</h2>
+        <p class="lead">Answer a few quick questions so we can match opportunities to your profile.</p>
+      </section>
+
+      <section class="panel">
+        <form id="profile-form" class="profile-form" autocomplete="off">
+          <div class="row">
+            <label>Level of study</label>
+            <select name="level" id="level">
+              <option value="secondary">Secondary</option>
+              <option value="postsec">Post-secondary / Polytechnic</option>
+              <option value="university">University</option>
+              <option value="postgrad">Postgraduate</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <label>GPA / Score (optional)</label>
+            <input type="text" name="gpa" id="gpa" placeholder="e.g. 3.5 or 86%" />
+          </div>
+
+          <div class="row">
+            <label>Annual household income (SGD, optional)</label>
+            <input type="number" name="income" id="income" placeholder="e.g. 50000" />
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Find matches</button>
+            <button type="button" id="save-profile" class="btn">Save profile</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="matches" class="cards">
+        <h3>Matches</h3>
+        <div id="results">Use the form to see scholarship matches.</div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>ScholarMatch — an experimental student tool. Not an official financial-advice service.</p>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
